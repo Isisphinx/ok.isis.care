@@ -17,18 +17,22 @@ import ListItemSecondaryAction from '@material-ui/core/ListItemSecondaryAction'
 import IconButton from '@material-ui/core/IconButton'
 import QuestionAnswerIcon from '@material-ui/icons/QuestionAnswer'
 import Typography from '@material-ui/core/Typography'
+import Divider from '@material-ui/core/Divider'
 
 const styles = {
   bigAvatar: {
     width: 60,
     height: 60,
   },
+  myMaxWidth: {
+    maxWidth: '400px',
+  },
 }
 
 const IndexPage = ({ classes }) => (
   <div>
     <Grid container direction="row" justify="center" alignItems="center">
-      <Grid item xs={6}>
+      <Grid item xs={11} className={classes.myMaxWidth}>
         <Card>
           <CardHeader
             avatar={
@@ -36,12 +40,17 @@ const IndexPage = ({ classes }) => (
                 I
               </Avatar>
             }
-            title="Shrimp and Chorizo Paella"
+            title="Isis"
             subheader="September 14, 2016"
           />
           <CardContent>
             <List component="nav">
-              <ListItem>
+              <ListItem
+                button
+                onClick={() => {
+                  Intercom('show')
+                }}
+              >
                 <ListItemIcon>
                   <QuestionAnswerIcon />
                 </ListItemIcon>
@@ -50,6 +59,9 @@ const IndexPage = ({ classes }) => (
                   secondary="Essayez ça en premier ;-)"
                 />
               </ListItem>
+              <li>
+                <Divider inset />
+              </li>
               <ListItem button component="a" href="tel:+33755536633">
                 <ListItemIcon>
                   <CallIcon />
@@ -71,7 +83,13 @@ const IndexPage = ({ classes }) => (
                 </ListItemIcon>
                 <ListItemText primary="ok@isis.care" />
               </ListItem>
-              <ListItem button component="a" href="mailto:ok@isis.care">
+              <ListItem
+                button
+                component="a"
+                target="_blank"
+                rel="noopener noreferrer"
+                href="https://goo.gl/maps/xqZPLa28KxB2"
+              >
                 <ListItemIcon>
                   <LocationOnIcon />
                 </ListItemIcon>
