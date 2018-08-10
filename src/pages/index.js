@@ -4,34 +4,92 @@ import CardHeader from '@material-ui/core/CardHeader'
 import Avatar from '@material-ui/core/Avatar'
 import { withStyles } from '@material-ui/core/styles'
 import CardContent from '@material-ui/core/CardContent'
-import Typography from '@material-ui/core/Typography'
 import Grid from '@material-ui/core/Grid'
+import List from '@material-ui/core/List'
+import ListItem from '@material-ui/core/ListItem'
+import ListItemIcon from '@material-ui/core/ListItemIcon'
+import ListItemText from '@material-ui/core/ListItemText'
+import CallIcon from '@material-ui/icons/Call'
+import EmailIcon from '@material-ui/icons/Email'
+import MessageIcon from '@material-ui/icons/Message'
+import LocationOnIcon from '@material-ui/icons/LocationOn'
+import ListItemSecondaryAction from '@material-ui/core/ListItemSecondaryAction'
+import IconButton from '@material-ui/core/IconButton'
+import QuestionAnswerIcon from '@material-ui/icons/QuestionAnswer'
+import Typography from '@material-ui/core/Typography'
 
 const styles = {
-
+  bigAvatar: {
+    width: 60,
+    height: 60,
+  },
 }
 
 const IndexPage = ({ classes }) => (
   <div>
-    <Grid
-      container
-      direction="row"
-      justify="center"
-      alignItems="center"
-    >
-      <Grid item xs={10}>
+    <Grid container direction="row" justify="center" alignItems="center">
+      <Grid item xs={6}>
         <Card>
           <CardHeader
-            avatar={<Avatar aria-label="Isis">I</Avatar>}
+            avatar={
+              <Avatar aria-label="Isis" className={classes.bigAvatar}>
+                I
+              </Avatar>
+            }
             title="Shrimp and Chorizo Paella"
             subheader="September 14, 2016"
           />
           <CardContent>
-            <Typography component="p">
-              This impressive paella is a perfect party dish and a fun meal to
-              cook together with your guests. Add 1 cup of frozen peas along
-              with the mussels, if you like.
-            </Typography>
+            <List component="nav">
+              <ListItem>
+                <ListItemIcon>
+                  <QuestionAnswerIcon />
+                </ListItemIcon>
+                <ListItemText
+                  primary="Chat"
+                  secondary="Essayez ça en premier ;-)"
+                />
+              </ListItem>
+              <ListItem button component="a" href="tel:+33755536633">
+                <ListItemIcon>
+                  <CallIcon />
+                </ListItemIcon>
+                <ListItemText primary="07 55 53 66 33" />
+                <ListItemSecondaryAction>
+                  <IconButton
+                    aria-label="SMS"
+                    component="a"
+                    href="sms:+33755536633"
+                  >
+                    <MessageIcon />
+                  </IconButton>
+                </ListItemSecondaryAction>
+              </ListItem>
+              <ListItem button component="a" href="mailto:ok@isis.care">
+                <ListItemIcon>
+                  <EmailIcon />
+                </ListItemIcon>
+                <ListItemText primary="ok@isis.care" />
+              </ListItem>
+              <ListItem button component="a" href="mailto:ok@isis.care">
+                <ListItemIcon>
+                  <LocationOnIcon />
+                </ListItemIcon>
+                <ListItemText
+                  secondary={
+                    <div>
+                      <Typography variant="body1" color="textSecondary">
+                        386 avenue de Dunkerque
+                      </Typography>
+                      <Typography variant="body1" color="textSecondary">
+                        59130 Lambersart - France
+                      </Typography>
+                    </div>
+                  }
+                  primary={'Isisphinx'}
+                />
+              </ListItem>
+            </List>
           </CardContent>
         </Card>
       </Grid>
