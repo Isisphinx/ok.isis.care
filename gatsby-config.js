@@ -1,3 +1,6 @@
+require("dotenv").config({
+  path: `.env.${process.env.NODE_ENV}`,
+})
 module.exports = {
   siteMetadata: {
     title: 'Gatsby Default Starter',
@@ -5,9 +8,9 @@ module.exports = {
   plugins: [
     'gatsby-plugin-react-helmet',
     {
-      resolve: `gatsby-plugin-intercom`,
+      resolve: 'gatsby-plugin-intercom-spa',
       options: {
-        appId: 'YOUR_INTERCOM_APP_ID',
+        app_id: process.env.INTERCOM_APP_ID,
       },
     },
   ],

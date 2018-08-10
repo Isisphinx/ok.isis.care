@@ -1,13 +1,42 @@
 import React from 'react'
-import Link from 'gatsby-link'
+import Card from '@material-ui/core/Card'
+import CardHeader from '@material-ui/core/CardHeader'
+import Avatar from '@material-ui/core/Avatar'
+import { withStyles } from '@material-ui/core/styles'
+import CardContent from '@material-ui/core/CardContent'
+import Typography from '@material-ui/core/Typography'
+import Grid from '@material-ui/core/Grid'
 
-const IndexPage = () => (
+const styles = {
+
+}
+
+const IndexPage = ({ classes }) => (
   <div>
-    <h1>Hi people</h1>
-    <p>Welcome to your new Gatsby site.</p>
-    <p>Now go build something great.</p>
-    <Link to="/page-2/">Go to page 2</Link>
+    <Grid
+      container
+      direction="row"
+      justify="center"
+      alignItems="center"
+    >
+      <Grid item xs={10}>
+        <Card>
+          <CardHeader
+            avatar={<Avatar aria-label="Isis">I</Avatar>}
+            title="Shrimp and Chorizo Paella"
+            subheader="September 14, 2016"
+          />
+          <CardContent>
+            <Typography component="p">
+              This impressive paella is a perfect party dish and a fun meal to
+              cook together with your guests. Add 1 cup of frozen peas along
+              with the mussels, if you like.
+            </Typography>
+          </CardContent>
+        </Card>
+      </Grid>
+    </Grid>
   </div>
 )
 
-export default IndexPage
+export default withStyles(styles)(IndexPage)
