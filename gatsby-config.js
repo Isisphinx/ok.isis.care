@@ -1,4 +1,4 @@
-require("dotenv").config({
+require('dotenv').config({
   path: `.env.${process.env.NODE_ENV}`,
 })
 module.exports = {
@@ -11,6 +11,12 @@ module.exports = {
       resolve: 'gatsby-plugin-intercom-spa',
       options: {
         app_id: process.env.INTERCOM_APP_ID,
+      },
+    },
+    {
+      resolve: 'gatsby-plugin-material-ui',
+      options: {
+        pathToTheme: 'src/theme.js',
       },
     },
   ],

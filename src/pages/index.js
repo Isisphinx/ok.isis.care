@@ -95,14 +95,14 @@ const IndexPage = ({ classes }) => (
                 </ListItemIcon>
                 <ListItemText
                   secondary={
-                    <div>
+                    <React.Fragment>
                       <Typography variant="body1" color="textSecondary">
                         386 avenue de Dunkerque
                       </Typography>
                       <Typography variant="body1" color="textSecondary">
                         59130 Lambersart - France
                       </Typography>
-                    </div>
+                      </React.Fragment>
                   }
                   primary={'Isisphinx'}
                 />
