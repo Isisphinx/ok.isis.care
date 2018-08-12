@@ -27,7 +27,7 @@ const Layout = ({ children, data, classes }) => (
       <AppBar position="static" color="default">
         <Toolbar>
           <Typography variant="title" color="inherit">
-            Contact Center
+            {data.site.siteMetadata.title}
           </Typography>
         </Toolbar>
       </AppBar>
