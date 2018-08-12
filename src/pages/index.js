@@ -59,8 +59,8 @@ const IndexPage = ({ classes }) => (
                   <QuestionAnswerIcon />
                 </ListItemIcon>
                 <ListItemText
-                  primary="Chat"
-                  secondary="Essayez ça en premier ;-)"
+                  primary={'Chat'}
+                  secondary={'Essayez ça en premier ;-)'}
                 />
               </ListItem>
               <li>
