@@ -41,7 +41,7 @@ const IndexPage = ({ classes }) => (
               </Avatar>
             }
             title="Isis"
-            subheader="September 14, 2016"
+            subheader="Contactez notre équipe"
           />
           <CardContent>
             <List component="nav">
