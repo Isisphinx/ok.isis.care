@@ -5,7 +5,7 @@ export default createMuiTheme({
   palette: {
     primary: purple,
     secondary: {
-      main: '#f44336',
+      main: '#c8b48c',
     },
   },
 })

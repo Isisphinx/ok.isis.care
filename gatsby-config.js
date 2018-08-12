@@ -23,12 +23,12 @@ module.exports = {
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: 'GatsbyJS',
-        short_name: 'GatsbyJS',
+        name: 'Contact Center Isis',
+        short_name: 'Isis',
         start_url: '/',
-        background_color: '#f7f0eb',
-        theme_color: '#a2466c',
-        display: 'minimal-ui',
+        background_color: '#fafafa',
+        theme_color: '#c8b48c',
+        display: 'standalone',
         icon: 'src/images/icon.png',
       },
     },
