@@ -98,7 +98,6 @@ const IndexPage = ({ classes }) => (
                   <LocationOnIcon />
                 </ListItemIcon>
                 <ListItemText
-                
                   secondary={
                     <React.Fragment>
                       <Typography component="span" color="textSecondary">
