@@ -9,7 +9,7 @@ import Typography from '@material-ui/core/Typography'
 
 const styles = {
   root: {
-    marginBottom: '2em',
+    marginBottom: '1em',
   },
 }
 

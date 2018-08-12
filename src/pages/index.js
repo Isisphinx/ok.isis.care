@@ -48,7 +48,11 @@ const IndexPage = ({ classes }) => (
               <ListItem
                 button
                 onClick={() => {
-                  Intercom('show')
+                  try {
+                    Intercom('show')
+                  } catch (error) {
+                    console.log(error)
+                  }
                 }}
               >
                 <ListItemIcon>
@@ -94,15 +98,16 @@ const IndexPage = ({ classes }) => (
                   <LocationOnIcon />
                 </ListItemIcon>
                 <ListItemText
+                
                   secondary={
                     <React.Fragment>
-                      <Typography variant="body1" color="textSecondary">
+                      <Typography component="span" color="textSecondary">
                         386 avenue de Dunkerque
                       </Typography>
-                      <Typography variant="body1" color="textSecondary">
+                      <Typography component="span" color="textSecondary">
                         59130 Lambersart - France
                       </Typography>
-                      </React.Fragment>
+                    </React.Fragment>
                   }
                   primary={'Isisphinx'}
                 />

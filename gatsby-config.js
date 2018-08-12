@@ -1,6 +1,7 @@
 require('dotenv').config({
   path: `.env.${process.env.NODE_ENV}`,
 })
+
 module.exports = {
   siteMetadata: {
     title: 'Gatsby Default Starter',
@@ -16,7 +17,19 @@ module.exports = {
     {
       resolve: 'gatsby-plugin-material-ui',
       options: {
-        pathToTheme: 'src/theme.js',
+        pathToTheme: 'src/themes/default',
+      },
+    },
+    {
+      resolve: `gatsby-plugin-manifest`,
+      options: {
+        name: 'GatsbyJS',
+        short_name: 'GatsbyJS',
+        start_url: '/',
+        background_color: '#f7f0eb',
+        theme_color: '#a2466c',
+        display: 'minimal-ui',
+        icon: 'src/images/icon.png', // This path is relative to the root of the site.
       },
     },
   ],
