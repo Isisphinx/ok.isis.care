@@ -40,7 +40,7 @@ const IndexPage = ({ classes }) => (
                 I
               </Avatar>
             }
-            title="Isis"
+            title="Team"
             subheader="Contactez notre équipe"
           />
           <CardContent>
@@ -81,11 +81,11 @@ const IndexPage = ({ classes }) => (
                   </IconButton>
                 </ListItemSecondaryAction>
               </ListItem>
-              <ListItem button component="a" href="mailto:ok@isis.care">
+              <ListItem button component="a" href="mailto:team@isis.care">
                 <ListItemIcon>
                   <EmailIcon />
                 </ListItemIcon>
-                <ListItemText primary="ok@isis.care" />
+                <ListItemText primary="team@isis.care" />
               </ListItem>
               <ListItem
                 button
