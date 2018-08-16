@@ -1,38 +1,28 @@
 {
-  "name": "gatsby-starter-default",
-  "description": "Gatsby default starter",
+  "name": "gatsby",
   "version": "1.0.0",
-  "author": "Kyle Mathews <mathews.kyle@gmail.com>",
+  "private": true,
   "dependencies": {
-    "@material-ui/core": "^1.4.3",
-    "@material-ui/icons": "^2.0.1",
+    "@material-ui/core": "^1.5.0",
+    "@material-ui/icons": "^2.0.2",
     "gatsby": "^1.9.277",
-    "gatsby-link": "^1.6.46",
     "gatsby-plugin-intercom-spa": "^0.0.5",
     "gatsby-plugin-manifest": "^1.0.27",
-    "gatsby-plugin-material-ui": "^0.1.3",
     "gatsby-plugin-react-helmet": "^2.0.11",
+    "jss": "^9.8.7",
+    "prop-types": "^15.6.2",
     "react": "^16.4.2",
     "react-dom": "^16.4.2",
     "react-helmet": "^5.2.0",
-    "typeface-roboto": "^0.0.54"
+    "react-jss": "^8.6.1"
   },
-  "keywords": [
-    "gatsby"
-  ],
-  "license": "MIT",
   "scripts": {
-    "build": "gatsby build",
-    "develop": "gatsby develop",
-    "format": "prettier --write 'src/**/*.js'",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "develop": "./node_modules/.bin/gatsby develop",
+    "build": "./node_modules/.bin/gatsby build",
+    "serve": "./node_modules/.bin/gatsby serve",
+    "format": "./node_modules/.bin/prettier --write src/**/*.js *.js *.json"
   },
   "devDependencies": {
-    "dotenv": "^6.0.0",
     "prettier": "^1.14.2"
-  },
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/gatsbyjs/gatsby-starter-default"
   }
 }
