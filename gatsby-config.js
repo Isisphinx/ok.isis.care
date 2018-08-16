@@ -11,7 +11,7 @@ module.exports = {
     {
       resolve: 'gatsby-plugin-intercom-spa',
       options: {
-        app_id: process.env.INTERCOM_APP_ID,
+        app_id: 'p3uq76c1',
       },
     },
     {
@@ -27,7 +27,7 @@ module.exports = {
         short_name: 'Isis',
         start_url: '/',
         background_color: '#fafafa',
-        theme_color: '#c8b48c',
+        theme_color: '#C8B48C',
         display: 'standalone',
         icon: 'src/images/icon.png',
       },
