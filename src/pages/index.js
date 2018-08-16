@@ -42,8 +42,7 @@ const Index = ({ classes, data }) => (
     <Helmet
       title={data.site.siteMetadata.title}
       meta={[
-        { name: 'description', content: 'Sample' },
-        { name: 'keywords', content: 'sample, something' },
+        { name: 'description', content: 'Contact Center Isis' },
       ]}
     />
     <div className={classes.root}>
