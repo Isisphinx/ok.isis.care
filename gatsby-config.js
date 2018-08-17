@@ -13,8 +13,8 @@ module.exports = {
     {
       resolve: `gatsby-plugin-favicon`,
       options: {
-        logo: "./src/images/icon.png",
-  
+        logo: './src/images/icon.png',
+
         appName: 'Isis',
         appDescription: 'Isis Contact Center',
         developerName: 'Thibaut Constant',
@@ -27,7 +27,7 @@ module.exports = {
         orientation: 'any',
         start_url: '/',
         version: '1.0',
-  
+
         icons: {
           android: true,
           appleIcon: true,
@@ -38,10 +38,10 @@ module.exports = {
           opengraph: false,
           twitter: false,
           yandex: false,
-          windows: false
-        }
-      }
-    }
+          windows: false,
+        },
+      },
+    },
     `gatsby-plugin-offline`,
   ],
 }
