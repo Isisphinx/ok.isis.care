@@ -11,7 +11,10 @@ function withRoot(Component) {
     constructor(props) {
       super(props)
 
-      this.pageContext = this.props.pageContext || getPageContext()
+      this.pageContext = Object.assign(
+        this.props.pageContext ? this.props.pageContext : {},
+        getPageContext()
+      )
     }
 
     componentDidMount() {

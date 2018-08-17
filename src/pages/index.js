@@ -24,6 +24,7 @@ import Helmet from 'react-helmet'
 import AppBar from '@material-ui/core/AppBar'
 import Toolbar from '@material-ui/core/Toolbar'
 
+let Intercom
 const styles = theme => ({
   root: {
     marginBottom: '1em',
@@ -41,9 +42,7 @@ const Index = ({ classes, data }) => (
   <div>
     <Helmet
       title={data.site.siteMetadata.title}
-      meta={[
-        { name: 'description', content: 'Contact Center Isis' },
-      ]}
+      meta={[{ name: 'description', content: 'Contact Center Isis' }]}
     />
     <div className={classes.root}>
       <AppBar position="static">
