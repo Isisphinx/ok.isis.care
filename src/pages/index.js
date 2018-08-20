@@ -1,4 +1,5 @@
 import React from 'react'
+import { graphql } from 'gatsby'
 import PropTypes from 'prop-types'
 import { withStyles } from '@material-ui/core/styles'
 import withRoot from '../withRoot'
@@ -24,7 +25,6 @@ import Helmet from 'react-helmet'
 import AppBar from '@material-ui/core/AppBar'
 import Toolbar from '@material-ui/core/Toolbar'
 
-let Intercom
 const styles = theme => ({
   root: {
     marginBottom: '1em',
@@ -71,7 +71,7 @@ const Index = ({ classes, data }) => (
                 button
                 onClick={() => {
                   try {
-                    Intercom('show')
+                    Intercom('show') // eslint-disable-line no-undef
                   } catch (error) {
                     console.log(error)
                   }
