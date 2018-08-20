@@ -1,4 +1,5 @@
 import React from 'react'
+import { graphql } from 'gatsby'
 import PropTypes from 'prop-types'
 import { withStyles } from '@material-ui/core/styles'
 import withRoot from '../withRoot'
@@ -41,9 +42,7 @@ const Index = ({ classes, data }) => (
   <div>
     <Helmet
       title={data.site.siteMetadata.title}
-      meta={[
-        { name: 'description', content: 'Contact Center Isis' },
-      ]}
+      meta={[{ name: 'description', content: 'Contact Center Isis' }]}
     />
     <div className={classes.root}>
       <AppBar position="static">
@@ -72,7 +71,7 @@ const Index = ({ classes, data }) => (
                 button
                 onClick={() => {
                   try {
-                    Intercom('show')
+                    Intercom('show') // eslint-disable-line no-undef
                   } catch (error) {
                     console.log(error)
                   }
