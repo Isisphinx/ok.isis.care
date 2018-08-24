@@ -24,14 +24,15 @@ import Divider from '@material-ui/core/Divider'
 import Helmet from 'react-helmet'
 import AppBar from '@material-ui/core/AppBar'
 import Toolbar from '@material-ui/core/Toolbar'
+import Face from '../images/face-small.png'
 
 const styles = theme => ({
   root: {
     marginBottom: '1em',
   },
   bigAvatar: {
-    width: 60,
-    height: 60,
+    width: 70,
+    height: 70,
   },
   myMaxWidth: {
     maxWidth: '400px',
@@ -58,9 +59,11 @@ const Index = ({ classes, data }) => (
         <Card>
           <CardHeader
             avatar={
-              <Avatar aria-label="Isis" className={classes.bigAvatar}>
-                I
-              </Avatar>
+              <Avatar
+                src={Face}
+                aria-label="Isis"
+                className={classes.bigAvatar}
+              />
             }
             title="Team"
             subheader="Contactez notre équipe"
