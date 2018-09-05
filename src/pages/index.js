@@ -5,6 +5,7 @@ import { withStyles } from '@material-ui/core/styles'
 import withRoot from '../withRoot'
 import Card from '@material-ui/core/Card'
 import CardHeader from '@material-ui/core/CardHeader'
+import CardActions from '@material-ui/core/CardActions'
 import Avatar from '@material-ui/core/Avatar'
 import CardContent from '@material-ui/core/CardContent'
 import Grid from '@material-ui/core/Grid'
@@ -25,6 +26,7 @@ import Helmet from 'react-helmet'
 import AppBar from '@material-ui/core/AppBar'
 import Toolbar from '@material-ui/core/Toolbar'
 import Face from '../images/face-small.png'
+import ScreenShare from '@material-ui/icons/ScreenShare'
 
 const styles = theme => ({
   root: {
@@ -138,6 +140,18 @@ const Index = ({ classes, data }) => (
               </ListItem>
             </List>
           </CardContent>
+          <CardActions disableActionSpacing>
+            <IconButton
+              aria-label="Teamviewer QS"
+              button
+              component="a"
+              target="_blank"
+              rel="noopener noreferrer"
+              href="https://898.tv/isisqs"
+            >
+              <ScreenShare color="primary" />
+            </IconButton>
+          </CardActions>
         </Card>
       </Grid>
     </Grid>
