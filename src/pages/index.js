@@ -97,16 +97,7 @@ const Index = ({ classes, data }) => (
                 <ListItemIcon>
                   <CallIcon color="primary" />
                 </ListItemIcon>
-                <ListItemText primary="07 55 53 66 33" />
-                <ListItemSecondaryAction>
-                  <IconButton
-                    aria-label="SMS"
-                    component="a"
-                    href="sms:+33755536633"
-                  >
-                    <MessageIcon color="primary" />
-                  </IconButton>
-                </ListItemSecondaryAction>
+                <ListItemText primary="09 70 40 80 09" />
               </ListItem>
               <ListItem button component="a" href="mailto:team@isis.care">
                 <ListItemIcon>
